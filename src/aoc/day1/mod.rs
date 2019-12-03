@@ -1,5 +1,4 @@
 use crate::aoc::utils::Input;
-use async_trait::async_trait;
 
 pub async fn part1() -> String {
     let input = Input {
@@ -17,7 +16,7 @@ fn get_recursive_fuel(n: u32) -> u32 {
         return 0u32;
     }
 
-    let curr_fuel = (n / 3 - 2);
+    let curr_fuel = n / 3 - 2;
     curr_fuel + get_recursive_fuel(curr_fuel)
 }
 
