@@ -4,6 +4,6 @@ mod aoc;
 
 #[tokio::main]
 async fn main() {
-    let result = aoc::day2::part2().await;
+    let result = aoc::day3::part1().await;
     println!("{}", result);
 }
