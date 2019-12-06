@@ -60,3 +60,17 @@ pub async fn part2() -> String {
 
     count.to_string()
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    async fn test_part1() {
+        assert_eq!(part1().await, "1748".to_string());
+    }
+
+    #[test]
+    async fn test_part2() {
+        assert_eq!(part2().await, "1180".to_string());
+    }
+}
