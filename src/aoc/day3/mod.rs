@@ -64,8 +64,8 @@ pub async fn part1() -> String {
         path: "src/aoc/day3/input.txt".to_string()
     };
     let lines = input.read().await;
-    let mut line1: Vec<String> = lines.first().unwrap().split(",").map(|s| s.to_string()).collect();
-    let mut line2: Vec<String> = lines.last().unwrap().split(",").map(|s| s.to_string()).collect();
+    let line1: Vec<String> = lines.first().unwrap().split(",").map(|s| s.to_string()).collect();
+    let line2: Vec<String> = lines.last().unwrap().split(",").map(|s| s.to_string()).collect();
 
     let points1 = get_points(line1);
     let points2 = get_points(line2);
@@ -90,8 +90,8 @@ pub async fn part2() -> String {
         path: "src/aoc/day3/input.txt".to_string()
     };
     let lines = input.read().await;
-    let mut line1: Vec<String> = lines.first().unwrap().split(",").map(|s| s.to_string()).collect();
-    let mut line2: Vec<String> = lines.last().unwrap().split(",").map(|s| s.to_string()).collect();
+    let line1: Vec<String> = lines.first().unwrap().split(",").map(|s| s.to_string()).collect();
+    let line2: Vec<String> = lines.last().unwrap().split(",").map(|s| s.to_string()).collect();
 
     let points1 = get_points(line1);
     let points2 = get_points(line2);

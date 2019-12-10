@@ -1,5 +1,4 @@
 use crate::aoc::utils::Input;
-use std::collections::HashSet;
 use std::collections::HashMap;
 use regex::Regex;
 
@@ -52,7 +51,7 @@ pub async fn part2() -> String {
 
         let re = Regex::new(r"^1*2*3*4*5*6*7*8*9*?$").unwrap();
 
-        if set.len() < i.to_string().len() && set.iter().any(|(key, val)| val.eq(&2_i32)) && re.is_match(i.to_string().as_str()) {
+        if set.len() < i.to_string().len() && set.iter().any(|(_, val)| val.eq(&2_i32)) && re.is_match(i.to_string().as_str()) {
             count = count + 1;
         }
     }

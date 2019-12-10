@@ -49,7 +49,7 @@ pub async fn part2() -> String {
     };
 
     let lines = input.read().await;
-    let mut vec: Vec<u32> = lines.first().unwrap().split(",").map(|s| s.parse::<u32>().unwrap()).collect::<Vec<u32>>();
+    let vec: Vec<u32> = lines.first().unwrap().split(",").map(|s| s.parse::<u32>().unwrap()).collect::<Vec<u32>>();
 
     for i  in 0..100 {
         for j in 0..100 {
